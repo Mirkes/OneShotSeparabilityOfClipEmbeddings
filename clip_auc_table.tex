@@ -1,0 +1,21 @@
+\begin{table}[tb]
+\centering
+\begin{tabular}{lccccccc}
+\hline
+ROC AUC over the 100 classes & min & 10\% & 25\% & median & 75\% & 90\% & max \\
+\hline
+ & 0.914 & 0.964 & 0.976 & 0.985 & 0.992 & 0.996 & 0.999 \\
+\hline
+\end{tabular}
+\\[2mm]
+\begin{tabular}{lccc}
+\hline
+Halfspace $\{x:(g(z),x)\ge\theta\}$ & balanced accuracy & own images captured & other images captured \\
+\hline
+threshold $\theta_z$ chosen per class & 0.946 & 95.7\% & 6.4\% \\
+one threshold $\theta$ for all classes & 0.927 & 92.7\% & 7.3\% \\
+\hline
+\end{tabular}
+\caption{The zero-shot rule as a halfspace classifier on the raw CLIP embeddings of the CIFAR-100 test set ($10{,}000$ images, $100$ classes). Top: distribution over classes of the ROC AUC of the score $(g(z),f(u))$ for separating the images of class $z$ from all others; the lowest values are ``flatfish'' (0.914), ``man'' (0.934), ``worm'' (0.945), the highest ``bicycle'' (0.999), ``pickup truck'' (0.999), ``sunflower'' (0.999). Bottom: balanced accuracy, recall and false-inclusion rate of the halfspace with the threshold maximising balanced accuracy, chosen per class or common to all classes. The argmax rule over the $100$ classes has accuracy 72.9\% with raw inner products and 75.8\% with cosine similarity.}
+\label{tab:clip-auc}
+\end{table}

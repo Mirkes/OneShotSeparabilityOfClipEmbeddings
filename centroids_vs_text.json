@@ -1,0 +1,34 @@
+{
+ "raw_inner_product": {
+  "top1_centroid_to_text": 0.92,
+  "top1_text_to_centroid": 0.98,
+  "own_mean": 26.763373097087467,
+  "other_mean": 13.74272114615711
+ },
+ "cosine": {
+  "top1_centroid_to_text": 1.0,
+  "top1_text_to_centroid": 1.0,
+  "own_mean": 0.33847946817194213,
+  "other_mean": 0.17303003317612362
+ },
+ "cosine_each_modality_centred": {
+  "top1_centroid_to_text": 0.97,
+  "top1_text_to_centroid": 0.99,
+  "own_mean": 0.5584840115424747,
+  "other_mean": -0.0054879432280679295
+ },
+ "modality_gap": {
+  "norm_common_shift": 9.165154130976152,
+  "mean_norm_of_gap_vectors": 10.248428810324947,
+  "fraction_of_gap_energy_explained_by_common_shift": 0.7988186076666324,
+  "cos_gap_with_common_shift_median": 0.897798350968753,
+  "residual_norm_mean": 4.558675318514112,
+  "text_norm_mean": 8.818058983396263,
+  "centroid_norm_mean": 8.9728177233476,
+  "cos_text_minus_shift_vs_centroid_median": 0.8720047192225736
+ },
+ "accuracy": {
+  "nearest_true_centroid_cosine": 0.8028,
+  "text_zero_shot_cosine": 0.7575
+ }
+}
