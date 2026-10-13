@@ -1,7 +1,7 @@
 # One-shot separability of CLIP embeddings — experiments for the paper "One-Shot Separation Theorems"
 
 Everything here reproduces the CLIP paragraph of the Introduction and the subsection
-"One-shot separability of CLIP embeddings" of the Examples section (two figures, one table).
+["One-shot separability of CLIP embeddings" of the Examples section (two figures, one table).](./files/clip_standalone.pdf)
 
 ## 0. Environment
 Python >= 3.10, numpy, scipy, scikit-learn, matplotlib, nltk (WordNet is downloaded on first use);
